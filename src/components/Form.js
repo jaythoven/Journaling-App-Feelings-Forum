@@ -23,7 +23,7 @@ function Form() {
         })
         .then(r => r.json())
         .then(newContentData => setContent((currentContent) => [...currentContent, newContentData]))
-        // must create a state in app where contents/comments from db.json are rendered
+        // must create a state in app or wherever contents/comments from db.json will be rendered
     
         setForm(newForm);
       }
