@@ -22,12 +22,15 @@ function App() {
       })
   }
 
-
+  function handleUpdateFeeling(updatedFeeling) {
+    const updatedFeelings = feelingData.map((feeling) => feeling.id === updatedFeeling.id ? updatedFeeling : feeling);
+    setFeelingData(updatedFeelings);
+  }
  
   return (
     <div className="App">
       <About/>
-      <FeelingsContainer feelings={feelingData}/>
+      <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
       <Form setFeelingData={setFeelingData} />
     </div>
   );
