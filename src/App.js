@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
+import Form from "./components/Form";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   }, []);
 
   function fetchFeelings() {
-    return fetch('http://localhost:3333/feelings')
+    return fetch('http://localhost:3000/feelings')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <About/>
       <FeelingsContainer feelings={feelingData}/>
-     
+      <Form setFeelingData={setFeelingData} />
     </div>
   );
 }
