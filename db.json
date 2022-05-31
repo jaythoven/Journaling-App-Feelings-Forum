@@ -1,39 +1,39 @@
 {
-  "feelings": [
-    {
-      "id": 1,
-      "name": "Jose N. Harris",
-      "content": "Never apologize for showing your feelings. When you do, you are apologizing for the truth.",
-      "likes": 18,
-      "date": "5/29/2022"
-    },
-    {
-      "id": 2,
-      "name": "William Shakespeare",
-      "content": "Never play with the feelings of others, because you  may win the game, but the risk is that you will surely lose the person for a lifetime.",
-      "likes": 6,
-      "date": "5/27/2022"
-    },
-    {
-      "id": 3,
-      "name": "Dwayne Johnson",
-      "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come",
-      "likes": 5,
-      "date": "5/29/2022"
-    },
-    {
-      "id": 4,
-      "name": "Elizabeth Taylor",
-      "content": "Pour yourself a drink, put on some lipstick and pull yourself together",
-      "likes": 4,
-      "date": "5/29/2022"
-    },
-    {
-      "id": 5,
-      "name": "Maya Angelou",
-      "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "likes": 3,
-      "date": "5/29/2022"
-    }
-  ]
+    "feelings": [
+      {
+        "id": 1,
+        "name": "Jose N. Harris",
+        "content": "Never apologize for showing your feelings. When you do, you are apologizing for the truth.",
+        "likes": 0,
+        "date": "3/04/2020"
+      },
+      {
+        "id": 2,
+        "name": "William Shakespeare",
+        "content": "Never play with the feelings of others, because you  may win the game, but the risk is that you will surely lose the person for a lifetime.",
+        "likes": 0,
+        "date": "1/01/1593"
+      },
+      {
+        "id": 3,
+        "name": "Dwayne Johnson",
+        "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come",
+        "likes": 0,
+        "date": "6/08/2012"
+      },
+      {
+        "id": 4,
+        "name": "Elizabeth Taylor",
+        "content": "Pour yourself a drink, put on some lipstick and pull yourself together",
+        "likes": 0,
+        "date": "9/15/2022"
+      },
+      {
+        "id": 5,
+        "name": "Maya Angelou",
+        "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+        "likes": 0,
+        "date": "11/13/2003"
+      }
+    ]
 }
