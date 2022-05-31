@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
-
+import NavBar from "./components/NavBar"
 
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
@@ -26,6 +26,7 @@ function App() {
  
   return (
     <div className="App">
+      <NavBar />
       <About/>
       <FeelingsContainer feelings={feelingData}/>
       <Form setFeelingData={setFeelingData} />
