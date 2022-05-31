@@ -4,6 +4,7 @@ const initialForm = {
     name: "",
     content: "",
     likes: 0,
+    date: `${new Date().toLocaleDateString()}`,
 }
 
 function Form({setFeelingData}) {
@@ -25,7 +26,8 @@ function Form({setFeelingData}) {
         .then(newContentData => setFeelingData((currentContent) => [...currentContent, newContentData]))
         // must create a state in app or wherever contents/comments from db.json will be rendered
     
-        setForm(form);
+        // setForm(form);
+        setForm(initialForm);
       }
     
     return (
@@ -33,7 +35,7 @@ function Form({setFeelingData}) {
             <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
             <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
             {/* <input name="likes" placeholder="Likes" value={form.likes} onChange={handleChange}/> */}
-            <input type="submit" value="Share your feelings with the world..." />
+            <button type="submit">Share your feelings with the world...</button>
         </form>
     )
 }
