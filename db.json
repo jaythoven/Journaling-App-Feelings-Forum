@@ -17,7 +17,7 @@
     {
       "id": 3,
       "name": "Dwayne Johnson",
-      "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come",
+      "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come.",
       "likes": 1,
       "date": "6/08/2012"
     },
@@ -34,12 +34,6 @@
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
       "likes": 0,
       "date": "11/13/2003"
-    },
-    {
-      "name": "Corey Schadeck",
-      "content": "I hope to always be as happy as I chose to be.",
-      "likes": 0,
-      "id": 6
     }
   ]
 }
