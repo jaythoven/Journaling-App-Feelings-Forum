@@ -15,13 +15,15 @@ function Form() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("http://localhost:8004/poems", {
+        // enter local host url!
+        fetch("ENTER LOCAL HOST URL HERE", {
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(newForm),
         })
         .then(r => r.json())
-        .then(newPoemData => setPoems((currentPoems) => [...currentPoems, newPoemData]))
+        .then(newContentData => setContent((currentContent) => [...currentContent, newContentData]))
+        // must create a state in app where contents/comments from db.json are rendered
     
         setForm(newForm);
       }
