@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
+import NavBar from "./components/NavBar";
+import {Switch, Route} from "react-router-dom";
+
+
 
 
 function App() {
@@ -26,9 +30,19 @@ function App() {
  
   return (
     <div className="App">
-      <About/>
-      <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
-      <Form setFeelingData={setFeelingData} />
+      <NavBar/>
+      <Switch>
+        <Route exact path="/">
+           <About/>
+        </Route>
+        <Route exact path="/Feelings">
+            <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
+        </Route>
+        <Route exact path="/Share">
+           <Form setFeelingData={setFeelingData}/>
+        </Route>
+      </Switch>
+      
     </div>
   );
 }
