@@ -1,7 +1,7 @@
 import React from "react";
 
 function NavBar() {
-  const links = ["about", "container", "Share"];
+  const links = ["About", "Feelings", "Share"];
   const navLinks = links.map((link) => {
   return ( <a href={"#" + link} key={link} className="button">{link}</a>)})
   return <nav className="NavBar">

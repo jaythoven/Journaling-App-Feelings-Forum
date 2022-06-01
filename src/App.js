@@ -4,6 +4,9 @@ import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
 import NavBar from "./components/NavBar";
 
+
+
+
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
  
