@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
-
+import NavBar from "./components/NavBar";
 
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
@@ -15,8 +15,11 @@ function App() {
   function fetchFeelings() {
     return fetch('http://localhost:3000/feelings')
       .then(res => res.json())
-      .then(data => setFeelingData(data)
-      )
+      .then(data => {
+        console.log(data);
+
+        setFeelingData(data);
+      })
   }
 
   function handleUpdateFeeling(updatedFeeling) {
@@ -26,6 +29,7 @@ function App() {
  
   return (
     <div className="App">
+      <NavBar />
       <About/>
       <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
       <Form setFeelingData={setFeelingData} />

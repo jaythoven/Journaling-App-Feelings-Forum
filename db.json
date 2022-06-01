@@ -17,7 +17,7 @@
     {
       "id": 3,
       "name": "Dwayne Johnson",
-      "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come",
+      "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come.",
       "likes": 1,
       "date": "6/08/2012"
     },
@@ -25,20 +25,20 @@
       "id": 4,
       "name": "Elizabeth Taylor",
       "content": "Pour yourself a drink, put on some lipstick and pull yourself together",
-      "likes": 1,
+      "likes": 0,
       "date": "9/15/2022"
     },
     {
       "id": 5,
       "name": "Maya Angelou",
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "likes": 1,
+      "likes": 3,
       "date": "11/13/2003"
     },
     {
-      "name": "",
-      "content": "huuh",
-      "likes": 0,
+      "name": "text",
+      "content": "text",
+      "likes": 5,
       "date": "6/1/2022",
       "id": 6
     }
