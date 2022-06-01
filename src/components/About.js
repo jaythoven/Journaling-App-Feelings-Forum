@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 function About() {
   return (
     <div id="about" className="about">
@@ -15,5 +14,6 @@ function About() {
   );
 
   
+
 }
 export default About;

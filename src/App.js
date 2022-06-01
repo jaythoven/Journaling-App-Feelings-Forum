@@ -19,11 +19,8 @@ function App() {
   function fetchFeelings() {
     return fetch('http://localhost:3000/feelings')
       .then(res => res.json())
-      .then(data => {
-        console.log(data);
-
-        setFeelingData(data);
-      })
+      .then(data => setFeelingData(data)
+      )
   }
 
   function handleUpdateFeeling(updatedFeeling) {

@@ -18,7 +18,7 @@ function FeelingCard({ feeling, handleUpdateFeeling }) {
             <h3 className="card__name">{feeling.name}</h3>
             <p className="card__content">{feeling.content}</p>
             <p className="card__extras">
-                <button onClick={likeHandler} className="card__likes">Likes: {likes} </button>
+                <button onClick={likeHandler} className="card__likes">💗: {likes} </button>
                 <span className="card__date">{feeling.date} </span>
             </p>
         </div>
