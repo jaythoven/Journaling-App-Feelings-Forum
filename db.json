@@ -32,6 +32,7 @@
       "id": 5,
       "name": "Maya Angelou",
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+<<<<<<< HEAD
       "likes": 3,
       "date": "11/13/2003"
     },
@@ -41,6 +42,22 @@
       "likes": 5,
       "date": "6/1/2022",
       "id": 6
+=======
+      "likes": 0,
+      "date": "11/13/2003"
+    },
+    {
+      "name": "1",
+      "content": "This is one",
+      "likes": 4,
+      "id": 6
+    },
+    {
+      "name": "2",
+      "content": "This is two",
+      "likes": 1,
+      "id": 7
+>>>>>>> d143d3938478959e04590229cc7d6d04aeb7edfc
     }
   ]
 }

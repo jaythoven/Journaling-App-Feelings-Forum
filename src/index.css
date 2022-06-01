@@ -27,11 +27,23 @@ body {
   /* background-color: #fff; */
 }
 
-.header {
+.about__header {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 1em;
 }
+
+.about__paragraph{
+  margin-top: 5%;
+  margin-bottom: 1em;
+  font-size: large;
+}
+
+.about__sun {
+  display: block;
+   margin: 0 auto;
+}
+
 
 
 .card {
@@ -57,7 +69,7 @@ body {
   cursor: pointer;
 }
 
-.NavBar {
+a {
   background-color: #fff;
   position: sticky;
   top: 0;
