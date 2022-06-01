@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 function NavBar() {
-  const links = ["About", "Feelings", "Share"];
-  const navLinks = links.map((link) => {
-  return ( <a href={"#" + link} key={link} className="button">{link}</a>)})
-  return <nav className="NavBar">
-    {navLinks}
-  </nav>;
+ return(
+    <nav>
+      <NavLink to="/Feelings">Feelings</NavLink>
+      <NavLink to="/Share">Share</NavLink>
+      <NavLink to="/">About</NavLink>
+   </nav>
+ )
 }
 
 export default NavBar;
