@@ -5,6 +5,9 @@ import Form from "./components/Form";
 import NavBar from "./components/NavBar";
 import {Switch, Route} from "react-router-dom";
 
+
+
+
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
  
