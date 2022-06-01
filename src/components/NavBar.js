@@ -8,7 +8,7 @@ function NavBar() {
       <NavLink to="/Share">Share</NavLink>
       <NavLink to="/">About</NavLink>
    </nav>
- );
+ )
 }
 
 export default NavBar;

@@ -29,11 +29,11 @@ function Form({setFeelingData}) {
       }
     
     return (
-        <form id="Share" className="form" onSubmit={handleSubmit}>
+        <form id="Share" className="form card" onSubmit={handleSubmit}>
             <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
             <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
             {/* <input name="likes" placeholder="Likes" value={form.likes} onChange={handleChange}/> */}
-            <input type="submit" value="Share your feelings with the world..." />
+            <input id="submit" classname="button" type="submit" value="Share your feelings with the world..." />
         </form>
     )
 }
