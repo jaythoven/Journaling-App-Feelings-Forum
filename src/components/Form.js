@@ -38,13 +38,7 @@ function Form({setFeelingData}) {
         <form id="Share" className="form card" onSubmit={handleSubmit}>
             <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
             <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
-<<<<<<< HEAD
-            <button disabled={hidden} id="submit" classname="button" type="submit">Share your feelings with the world...</button>
-=======
-            {/* <input name="likes" placeholder="Likes" value={form.likes} onChange={handleChange}/> */}
             <input id="submit" className="button" type="submit" value="Share your feelings with the world..." />
-
->>>>>>> d143d3938478959e04590229cc7d6d04aeb7edfc
         </form>
     )
 }
