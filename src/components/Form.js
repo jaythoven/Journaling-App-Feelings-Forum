@@ -9,10 +9,27 @@ const initialForm = {
 
 function Form({setFeelingData}) {
     const [form, setForm] = useState(initialForm);
+    const [isHidden, setIsHidden] = useState(true);
+    
+    const buttonText = "Share your feelings with the world..."
+
+    // function handleFormChange(e) {
+    //     if(e.target.value.length > 0) {
+    //         setIsHidden(!isHidden)
+    //     } else {
+    //         setIsHidden(isHidden)
+    //     }
+    // }
 
     function handleChange(e) {
+        if(e.target.value.length > 0) {
+            setIsHidden(!isHidden)
+        } else {
+            setIsHidden(isHidden)
+        };
+        // console.log(e.target);
         setForm((currentFormState) => ({...currentFormState, [e.target.name]: e.target.value}));
-      }
+    }
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -32,10 +49,10 @@ function Form({setFeelingData}) {
     
     return (
         <form className="form" onSubmit={handleSubmit}>
-            <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
-            <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
+            <input name="name" placeholder="Name" type="text" value={form.name} onChange={handleChange}/>
+            <textarea name="content" placeholder="Write your comment here..." type="text" rows={5} value={form.content} onChange={handleChange}/>
             {/* <input name="likes" placeholder="Likes" value={form.likes} onChange={handleChange}/> */}
-            <button type="submit">Share your feelings with the world...</button>
+            <button type="submit" disabled={isHidden}>{buttonText}</button>
         </form>
     )
 }
