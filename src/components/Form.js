@@ -24,18 +24,22 @@ function Form({ setFeelingData }) {
 
     function handleSubmit(e) {
         e.preventDefault();
+        if(e.target.name.value === "" && e.target.content.value !== ""){return alert("PLEASE ADD A NAME")}
+        else{if(e.target.content.value === "" && e.target.name.value !== ""){return alert("PLEASE ADD A FEELING")}
+        else{ if(e.target.name.value === "" && e.target.content.value === ""){
+            return alert("PLEASE ADD A NAME AND A FEELING")
+        }else{
+    fetch("http://localhost:3000/feelings", {
+        method: "POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify(form),
+    })
+    .then(r => r.json())
+    .then(newContentData => setFeelingData((currentContent) => [...currentContent, newContentData]))
 
-        fetch("http://localhost:3000/feelings", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(form),
-        })
-            .then(r => r.json())
-            .then(newContentData => setFeelingData((currentContent) => [...currentContent, newContentData]))
-
-        setForm(initialForm);
-        history.push('/Feelings')
-    }
+    setForm(initialForm);
+    history.push('/Feelings')
+  }}}}
 
     return (
         <div>  <h1 className="about__header">Tell us how you are feeling</h1>
