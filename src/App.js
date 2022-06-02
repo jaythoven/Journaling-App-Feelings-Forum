@@ -3,14 +3,14 @@ import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
 import NavBar from "./components/NavBar";
-import {Switch, Route} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 
 
 
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
- 
+
 
   useEffect(() => {
     fetchFeelings()
@@ -30,22 +30,22 @@ function App() {
     const updatedFeelings = feelingData.map((feeling) => feeling.id === updatedFeeling.id ? updatedFeeling : feeling);
     setFeelingData(updatedFeelings);
   }
- 
+
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <Switch>
         <Route exact path="/">
-           <About/>
+          <About />
         </Route>
         <Route exact path="/Feelings">
-            <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
+          <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
         </Route>
         <Route exact path="/Share">
-           <Form setFeelingData={setFeelingData}/>
+          <Form setFeelingData={setFeelingData} />
         </Route>
       </Switch>
-      
+
     </div>
   );
 }

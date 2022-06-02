@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Jose N. Harris",
       "content": "Never apologize for showing your feelings. When you do, you are apologizing for the truth.",
-      "likes": 6,
+      "likes": 11,
       "date": "3/04/2020"
     },
     {
@@ -32,7 +32,7 @@
       "id": 5,
       "name": "Maya Angelou",
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "likes": 4,
+      "likes": 5,
       "date": "11/13/2003"
     },
     {
@@ -52,9 +52,37 @@
     {
       "name": "osvaldo",
       "content": "always pee before you leave.",
-      "likes": 4,
+      "likes": 5,
       "date": "6/2/2022",
       "id": 9
+    },
+    {
+      "name": "William ",
+      "content": "William feels as though my feelings should be expressed on his form. \n\n-- Robert ",
+      "likes": 0,
+      "date": "6/2/2022",
+      "id": 10
+    },
+    {
+      "name": "William",
+      "content": "I feel good about this.",
+      "likes": 1,
+      "date": "6/2/2022",
+      "id": 11
+    },
+    {
+      "name": "Blue Swede",
+      "content": "when you hold me in your arms so tight.\nyou let me know that everything is alright.\n\nahhhh\n\nhooked on a feeling",
+      "likes": 0,
+      "date": "6/2/2022",
+      "id": 12
+    },
+    {
+      "name": "Mohammad",
+      "content": "Can't wait for the weekenddd!!!!",
+      "likes": 6,
+      "date": "6/2/2022",
+      "id": 13
     }
   ]
 }
