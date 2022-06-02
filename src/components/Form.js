@@ -38,11 +38,13 @@ function Form({setFeelingData}) {
       }
     
     return (
+        <div>  <h1 className="about__header">Tell us how you are feeling</h1>
         <form id="Share" className="form card" onSubmit={handleSubmit}>
             <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
             <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
             <input id="submit" className="button" type="submit" value="Share your feelings with the world..." />
-        </form>
+        </form> 
+        </div>
     )
 }
 
