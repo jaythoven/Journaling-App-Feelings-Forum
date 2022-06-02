@@ -6,6 +6,8 @@
 }
 
 body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: lightblue;
   background-image: url(./images/clouds.jpg);
   background-size: cover;
@@ -28,31 +30,41 @@ body {
 }
 
 .about__header {
+  color: #fff;
+text-shadow: 1px 1px 0 #222;
+
   text-align: center;
   margin-top: 5%;
   margin-bottom: 1em;
 }
 
-.about__paragraph{
+.about__paragraph {
+  color: #fff;
+text-shadow: 1px 1px 0 #222;
+
   margin-top: 5%;
   margin-bottom: 1em;
-  font-size: large;
+  font-size: x-large;
 }
 
 .about__sun {
   display: block;
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 
 
 .card {
+  background: rgb(255, 255, 255, 0.8);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  margin-top: 16px;
   margin-bottom: 16px;
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  background-color: #fff;
+  color: #222;
+  /*background-color: #fff;*/
 }
 
 .card__name {
@@ -69,8 +81,10 @@ body {
   cursor: pointer;
 }
 
-a {
-  background-color: #fff;
+.NavBar {
+  background: rgb(255, 255, 255, 0.8);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  z-index: 10;
   position: sticky;
   top: 0;
   margin: 0 -16px;
@@ -110,12 +124,13 @@ a {
 }
 
 .form {
+
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
   padding: 12px 20px;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 #submit {

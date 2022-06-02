@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 
 function NavBar() {
  return(
-    <nav className="button">
-      <NavLink to="/Feelings">Feelings</NavLink>
-      <NavLink to="/Share">Share</NavLink>
-      <NavLink to="/">About</NavLink>
+    <nav className="NavBar">
+      <NavLink to="/Feelings"  className={"button"}>Feelings</NavLink>
+      <NavLink to="/Share" className={"button"}>Share</NavLink>
+      <NavLink to="/" className={"button"}>About</NavLink>
    </nav>
  )
 }

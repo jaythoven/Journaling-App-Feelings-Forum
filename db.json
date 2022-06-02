@@ -32,8 +32,22 @@
       "id": 5,
       "name": "Maya Angelou",
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "likes": 3,
+      "likes": 4,
       "date": "11/13/2003"
+    },
+    {
+      "name": "Corey Schadeck",
+      "content": "Hello, I feel feelings!!",
+      "likes": 1,
+      "date": "6/1/2022",
+      "id": 6
+    },
+    {
+      "name": "",
+      "content": "",
+      "likes": 0,
+      "date": "6/2/2022",
+      "id": 7
     }
   ]
 }
