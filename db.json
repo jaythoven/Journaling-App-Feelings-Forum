@@ -11,7 +11,7 @@
       "id": 2,
       "name": "William Shakespeare",
       "content": "Never play with the feelings of others, because you  may win the game, but the risk is that you will surely lose the person for a lifetime.",
-      "likes": 1,
+      "likes": 2,
       "date": "1/01/1593"
     },
     {
@@ -26,7 +26,7 @@
       "name": "Elizabeth Taylor",
       "content": "Pour yourself a drink, put on some lipstick and pull yourself together",
       "likes": 0,
-      "date": "9/15/2022"
+      "date": "9/0?/1958"
     },
     {
       "id": 5,
@@ -43,11 +43,18 @@
       "id": 6
     },
     {
-      "name": "",
-      "content": "",
+      "name": "Obi-Wan Kenobi",
+      "content": "What I tell you is true, from a certain point of view.",
       "likes": 0,
       "date": "6/2/2022",
-      "id": 7
+      "id": 8
+    },
+    {
+      "name": "osvaldo",
+      "content": "always pee before you leave.",
+      "likes": 1,
+      "date": "6/2/2022",
+      "id": 9
     }
   ]
 }

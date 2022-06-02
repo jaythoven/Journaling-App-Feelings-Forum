@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const initialForm = {
     name: "",
@@ -19,6 +20,7 @@ function Form({setFeelingData}) {
     // const handleTextChange = (event) => {
     //     setForm(event.target.value);
     //   };
+    const history = useHistory();
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -32,6 +34,7 @@ function Form({setFeelingData}) {
         .then(newContentData => setFeelingData((currentContent) => [...currentContent, newContentData]))
 
         setForm(initialForm);
+        history.push('/Feelings')
       }
     
     return (

@@ -1,22 +1,15 @@
-# Welcome to the Feelings Forum
+# Getting Started with Create React App
 
-The feelings Forum is a single page application utilizing React, HTMl, and CSS.  How are you feeling today? We would love to hear about it. Share your feelings, thoughts, or words of wisdom on the "Share" page. Or, gain some inspiration by visiting the "Feelings" page. Whatever you are feeling, it is valid and important. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Creators
-Corey Schadeck
-Jonathan Aguilar
-William Hwang
+## Available Scripts
 
+In the project directory, you can run:
 
-### As a User
-1. The user will land on the About Page where they can enjoy some sunshine, and recieve a pleasent welcome message that also directs how to navigate through out the page.
-2. The user can slect from the Nav Bar buttons to view the Feelings page to read the posted Feelings. The user can also "like" a feeling by clicking a button that perisiter the added like.
-3. The user can also choose to submit their own feeling(s) but clicking the share button in the Nav Bar. This will take them to a form page to submit their name, feeling. Upcon clickeing "Share your feelings to the world" they will be taken back to the feelings page to view their feelings being added to the forum.
-
+### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
-Run 
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
