@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 
 function FeelingCard({ feeling, handleUpdateFeeling }) {
-    const { id, name, content, likes, date} = feeling;
+    const { id, name, content, likes, date } = feeling;
 
     function likeHandler() {
-          fetch(`http://localhost:3000/feelings/${id}`, {
+        fetch(`http://localhost:3000/feelings/${id}`, {
             method: "PATCH",
-            headers: {"Content-Type":"application/json"},
-            body: JSON.stringify({likes: feeling.likes + 1})
-            }).then(r=>r.json())
-            .then((data) => { console.log(data);
-                handleUpdateFeeling(data)})
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ likes: feeling.likes + 1 })
+        }).then(r => r.json())
+            .then((data) => {
+                console.log(data);
+                handleUpdateFeeling(data)
+            })
     }
 
     return (

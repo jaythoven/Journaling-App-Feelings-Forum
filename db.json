@@ -4,36 +4,85 @@
       "id": 1,
       "name": "Jose N. Harris",
       "content": "Never apologize for showing your feelings. When you do, you are apologizing for the truth.",
-      "likes": 1,
+      "likes": 11,
       "date": "3/04/2020"
     },
     {
       "id": 2,
       "name": "William Shakespeare",
       "content": "Never play with the feelings of others, because you  may win the game, but the risk is that you will surely lose the person for a lifetime.",
-      "likes": 1,
+      "likes": 11,
       "date": "1/01/1593"
     },
     {
       "id": 3,
       "name": "Dwayne Johnson",
       "content": "Success isn't always about 'Greatness'. It's about consistency. Consistent, hard work gains success. Greatness will come.",
-      "likes": 2,
+      "likes": 15,
       "date": "6/08/2012"
     },
     {
       "id": 4,
       "name": "Elizabeth Taylor",
       "content": "Pour yourself a drink, put on some lipstick and pull yourself together",
-      "likes": 0,
-      "date": "9/15/2022"
+      "likes": 6,
+      "date": "9/0?/1958"
     },
     {
       "id": 5,
       "name": "Maya Angelou",
       "content": "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "likes": 4,
+      "likes": 5,
       "date": "11/13/2003"
+    },
+    {
+      "name": "Corey Schadeck",
+      "content": "Hello, I feel feelings!!",
+      "likes": 3,
+      "date": "6/1/2022",
+      "id": 6
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "content": "What I tell you is true, from a certain point of view.",
+      "likes": 19,
+      "date": "6/2/2022",
+      "id": 8
+    },
+    {
+      "name": "osvaldo",
+      "content": "always pee before you leave.",
+      "likes": 5,
+      "date": "6/2/2022",
+      "id": 9
+    },
+    {
+      "name": "William ",
+      "content": "William feels as though my feelings should be expressed on his form. -- Robert ",
+      "likes": 0,
+      "date": "6/2/2022",
+      "id": 10
+    },
+    {
+      "name": "William",
+      "content": "I feel good about this.",
+      "likes": 1,
+      "date": "6/2/2022",
+      "id": 11
+    },
+    {
+      "name": "Blue Swede",
+      "content": "when you hold me in your arms so tight you let me know that everything is alright. I'm hooked on a feeling",
+      "likes": 0,
+      "date": "6/2/2022",
+      "id": 12
+    },
+    {
+      "name": "Mohammad",
+      "content": "Can't wait for the weekenddd!!!!",
+      "likes": 6,
+      "date": "6/2/2022",
+      "id": 13
     }
   ]
 }
