@@ -9,16 +9,16 @@ const initialForm = {
 
 function Form({setFeelingData}) {
     const [form, setForm] = useState(initialForm);
-    const [hidden, setHidden] = useState(true);
+    // const [hidden, setHidden] = useState(true);
 
-    function handleChange(e) {
-        setForm((currentFormState) => ({...currentFormState, [e.target.name]: e.target.value}));
-        setHidden(!hidden);
-      }
+    // function handleChange(e) {
+    //     setForm((currentFormState) => ({...currentFormState, [e.target.name]: e.target.value}));
+    //     setHidden(!hidden);
+    //   }
 
-    // const handleTextChange = (event) => {
-    //     setForm(event.target.value);
-    //   };
+    const handleChange = (e) => {
+        setForm(e.target.value);
+      };
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -36,9 +36,9 @@ function Form({setFeelingData}) {
     
     return (
         <form id="Share" className="form card" onSubmit={handleSubmit}>
-            <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/>
+            {/* <input name="name" placeholder="Name" value={form.name} onChange={handleChange}/> */}
             <textarea name="content" placeholder="Write your comment here..." rows={10} value={form.content} onChange={handleChange}/>
-            <input id="submit" className="button" type="submit" value="Share your feelings with the world..." />
+            <input id="submit" className="button" type="submit" disabled={!form} value="Share your feelings with the world..." />
         </form>
     )
 }
