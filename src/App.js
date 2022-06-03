@@ -7,7 +7,6 @@ import { Switch, Route } from "react-router-dom";
 
 
 
-
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
   
@@ -34,7 +33,7 @@ function App() {
   const scrollToBottom = () => {
     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  useEffect(scrollToBottom, [feelingData]);
+  
 
   return (
     <div className="App">
@@ -44,13 +43,12 @@ function App() {
           <About />
         </Route>
         <Route exact path="/Feelings">
-          <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} messagesEndRef={messagesEndRef}/>
+          <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} messagesEndRef={messagesEndRef} scrollToBottom={scrollToBottom}/>
         </Route>
         <Route exact path="/Share">
           <Form setFeelingData={setFeelingData} />
         </Route>
       </Switch>
-
     </div>
   );
 }
