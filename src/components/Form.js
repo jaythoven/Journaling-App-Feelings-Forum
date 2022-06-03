@@ -11,7 +11,6 @@ const initialForm = {
 function Form({ setFeelingData }) {
     const [form, setForm] = useState(initialForm);
     const [hidden, setHidden] = useState(true);
-
     function handleChange(e) {
         setForm((currentFormState) => ({ ...currentFormState, [e.target.name]: e.target.value }));
         setHidden(!hidden);

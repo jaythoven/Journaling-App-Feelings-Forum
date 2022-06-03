@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import About from "./components/About";
 import FeelingsContainer from "./components/FeelingsContainer";
 import Form from "./components/Form";
@@ -10,7 +10,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   const [feelingData, setFeelingData] = useState({ feelings: [] });
-
+  
 
   useEffect(() => {
     fetchFeelings()
@@ -30,6 +30,11 @@ function App() {
     const updatedFeelings = feelingData.map((feeling) => feeling.id === updatedFeeling.id ? updatedFeeling : feeling);
     setFeelingData(updatedFeelings);
   }
+  const messagesEndRef = useRef(null);
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  useEffect(scrollToBottom, [feelingData]);
 
   return (
     <div className="App">
@@ -39,7 +44,7 @@ function App() {
           <About />
         </Route>
         <Route exact path="/Feelings">
-          <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} />
+          <FeelingsContainer feelings={feelingData} handleUpdateFeeling={handleUpdateFeeling} messagesEndRef={messagesEndRef}/>
         </Route>
         <Route exact path="/Share">
           <Form setFeelingData={setFeelingData} />
