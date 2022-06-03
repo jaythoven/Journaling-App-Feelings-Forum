@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FeelingCard from "./FeelingCard";
 
-function FeelingsContainer({ feelings, handleUpdateFeeling }) {
+function FeelingsContainer({ feelings, handleUpdateFeeling, messagesEndRef }) {
   return (
 
     <div id="container" className="feelings-container">
@@ -9,6 +9,7 @@ function FeelingsContainer({ feelings, handleUpdateFeeling }) {
       {feelings.length === undefined ? <div>Still loading...</div> : feelings.map((feeling) =>
         <FeelingCard key={feeling.id} feeling={feeling} handleUpdateFeeling={handleUpdateFeeling} />
       )}
+      <div ref={messagesEndRef} />
     </div>
   );
 
